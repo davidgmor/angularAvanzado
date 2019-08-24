@@ -2,11 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
+import { PagesModule } from './pages/pages.module';
+import { PagesRoutingModule } from './pages/pages-routing.module';
+import { ServicesModule } from './services/services.module';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { PagesModule } from './pages/pages.module';
-import { PagesRoutingModule } from './pages/pages-routing.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { PagesRoutingModule } from './pages/pages-routing.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ServicesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
